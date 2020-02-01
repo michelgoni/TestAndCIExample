@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  Dragons
+
+  Created by Michel on 29/01/2020.
+  Copyright © 2020 Michel. All rights reserved.
+*/
+
+// Popups
+"ERROR_TITLE" = "Error";
+"ERROR_RETRIEVING_FLIGHTS" = "There was some error retrieving flights";
+
+
+//Title
+"MAIN_SCREEN_TITLE" = "Choose your flight";
+

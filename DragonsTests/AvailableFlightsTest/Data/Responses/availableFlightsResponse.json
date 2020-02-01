@@ -1,0 +1,26 @@
+{
+    "results": [{
+        "inbound": {
+            "airline": "Vermithrax",
+            "airlineImage": "http://dragonimages.net/images/gallery/dragon-images-by-unknown-236.jpg",
+            "arrivalDate": "12/2/3950",
+            "arrivalTime": "14:22",
+            "departureDate": "9/3/3949",
+            "departureTime": "13:58",
+            "destination": "Samyrian",
+            "origin": "Old Valyria"
+        },
+        "outbound": {
+            "airline": "Rhaegal",
+            "airlineImage": "http://dragonimages.net/images/gallery/dragon-images-by-unknown-252.jpg",
+            "arrivalDate": "9/21/4008",
+            "arrivalTime": "9:53",
+            "departureDate": "6/4/4000",
+            "departureTime": "22:28",
+            "destination": "Old Valyria",
+            "origin": "Samyrian"
+        },
+        "price": 7541.1,
+        "currency": "EUR"
+    }]
+}

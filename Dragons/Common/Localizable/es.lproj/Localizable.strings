@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Dragons
+
+  Created by Michel on 29/01/2020.
+  Copyright © 2020 Michel. All rights reserved.
+*/
+
+"ERROR_TITLE" = "Error";
+"ERROR_RETRIEVING_FLIGHTS" = "Ha habido un error al buscar vuelos";
+
+
+//Title
+"MAIN_SCREEN_TITLE" = "Escoje tu vuelo";
+
