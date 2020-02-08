@@ -8,8 +8,8 @@ jobs:
     runs-on: macOS-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2 
     - name: Run tests
       run: xcodebuild -project 'Dragons.xcodeproj' -scheme 'Dragons' -destination 'platform=iOS Simulator,name=iPhone 8' test
     - name: Build App
-      run: xcodebuild -project 'Dragons.xcodeproj' -scheme 'Dragons' -destination 'generic/platform=iOS' -configuration Release build CODE_SIGNING_ALL_ALLOWED=NO
+      run: xcodebuild -project 'Dragons.xcodeproj' -scheme 'Dragons' -destination 'generic/platform=iOS' -allowProvisioningUpdates -configuration Release build CODE_SIGNING_ALL_ALLOWED=NO
