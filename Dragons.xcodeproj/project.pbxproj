@@ -101,7 +101,6 @@
 		D0979C0F23D38D9100DF8E37 /* Geogrotesque-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0979C0A23D38D9100DF8E37 /* Geogrotesque-Bold.otf */; };
 		D0979C1023D38D9100DF8E37 /* Geogrotesque-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0979C0B23D38D9100DF8E37 /* Geogrotesque-Medium.otf */; };
 		D0979C1123D38D9100DF8E37 /* Geogrotesque-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D0979C0B23D38D9100DF8E37 /* Geogrotesque-Medium.otf */; };
-		D0B057A623F9C76200BF3104 /* AvailableFlights.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B057A523F9C76200BF3104 /* AvailableFlights.swift */; };
 		D0CFD5BD23B6585D00127103 /* AvailableFlightsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CFD5BC23B6585D00127103 /* AvailableFlightsSection.swift */; };
 		D0CFD5BE23B6585D00127103 /* AvailableFlightsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CFD5BC23B6585D00127103 /* AvailableFlightsSection.swift */; };
 		D0DBBE6723E1360B0077F936 /* PersistenceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DBBE6623E1360B0077F936 /* PersistenceTest.swift */; };
@@ -198,7 +197,6 @@
 		D0979C0923D38D9100DF8E37 /* Geogrotesque-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geogrotesque-Regular.otf"; sourceTree = "<group>"; };
 		D0979C0A23D38D9100DF8E37 /* Geogrotesque-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geogrotesque-Bold.otf"; sourceTree = "<group>"; };
 		D0979C0B23D38D9100DF8E37 /* Geogrotesque-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Geogrotesque-Medium.otf"; sourceTree = "<group>"; };
-		D0B057A523F9C76200BF3104 /* AvailableFlights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AvailableFlights.swift; path = DragonsTests/AvailableFlightsTest/View/AvailableFlights.swift; sourceTree = "<group>"; };
 		D0CFD5BC23B6585D00127103 /* AvailableFlightsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableFlightsSection.swift; sourceTree = "<group>"; };
 		D0DBBE6623E1360B0077F936 /* PersistenceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceTest.swift; sourceTree = "<group>"; };
 		D0DBBE6923E145C60077F936 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
@@ -337,7 +335,6 @@
 		D00E723C238129E4006119C4 = {
 			isa = PBXGroup;
 			children = (
-				D0B057A523F9C76200BF3104 /* AvailableFlights.swift */,
 				D00E7247238129E4006119C4 /* Dragons */,
 				D00E725E238129E6006119C4 /* DragonsTests */,
 				D00E7246238129E4006119C4 /* Products */,
@@ -873,7 +870,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0B057A623F9C76200BF3104 /* AvailableFlights.swift in Sources */,
 				D0143AE323BBC9FA00682C22 /* ModuledSectionModelProtocol.swift in Sources */,
 				D00E728F2381343C006119C4 /* AvailableFlightsRouter.swift in Sources */,
 				D0837740238EF8B300C11590 /* AlertActions.swift in Sources */,

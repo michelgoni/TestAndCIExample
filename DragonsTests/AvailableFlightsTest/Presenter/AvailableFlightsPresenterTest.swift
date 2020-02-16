@@ -66,7 +66,13 @@ class AvailableFlightsPresenterTest: XCTestCase {
     
     func givenAvailableFlightASectionWithViewModelWillbeReturned(availableFlight: AvailableFlightResponse) -> AvailableFlightsSection {
         
-        let element = [AvailableFlightDetail(airline: TextStyles.flightPrice(text: availableFlight.inbound.airline),flightDescription: TextStyles.flightHeaderDescription(text: availableFlight.inbound.origin + "-" + availableFlight.inbound.destination),departureDate: TextStyles.flightPrice(text: availableFlight.inbound.departureDate),returnDate: TextStyles.flightCurrency(text: availableFlight.outbound.arrivalDate),returnTime: TextStyles.flightCurrency(text: availableFlight.outbound.arrivalTime), departureTime: TextStyles.flightCurrency(text: availableFlight.inbound.departureTime),price: TextStyles.flightCurrency(text: String(format: "%.2f", availableFlight.price)))]
+        let element = [AvailableFlightDetail(airline: availableFlight.inbound.airline,
+                                             flightDescription: availableFlight.inbound.origin + "-" + availableFlight.inbound.destination,
+                                             departureDate: availableFlight.inbound.departureDate,
+                                             returnDate: availableFlight.outbound.arrivalDate,
+                                             returnTime: availableFlight.outbound.arrivalTime,
+                                             departureTime: availableFlight.inbound.departureTime,
+                                             price: String(format: "%.2f", availableFlight.price))]
         
         let section = AvailableFlightsSection(sectionElement: AvailableFlightsSectionViewModel(elements: element,
                                                                                                      delegate: self,
@@ -145,8 +151,8 @@ class AvailableFlightsPresenterTest: XCTestCase {
         if let availableFlightElement = section.sectionElement.elements?.first as? AvailableFlightDetailRepresentable {
             let flightHeaderTitle = section.sectionElement.section.title
             let flightHeaderPrice = section.sectionElement.section.price
-            let airline = availableFlightElement.airline.text
-            let departureDate = availableFlightElement.departureDate.text
+            let airline = availableFlightElement.airline
+            let departureDate = availableFlightElement.departureDate
             delegate?.toggleSection(header: HeaderView(), section: 1)
             XCTAssertTrue(flightHeaderTitle == "Old Valyria-Samyrian")
             XCTAssertTrue(flightHeaderPrice == 7541.1)

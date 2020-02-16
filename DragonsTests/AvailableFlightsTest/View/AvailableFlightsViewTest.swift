@@ -84,7 +84,13 @@ class MockAvailableFlightsPresenter: AvailableFlightsPresenterProtocol {
     
     private func givenAvailableFlightASectionWithViewModelWillbeReturned(availableFlight: AvailableFlightResponse) -> AvailableFlightsSection {
         
-        let element = [AvailableFlightDetail(airline: TextStyles.flightPrice(text: availableFlight.inbound.airline),flightDescription: TextStyles.flightHeaderDescription(text: availableFlight.inbound.origin + "-" + availableFlight.inbound.destination),departureDate: TextStyles.flightPrice(text: availableFlight.inbound.departureDate),returnDate: TextStyles.flightCurrency(text: availableFlight.outbound.arrivalDate),returnTime: TextStyles.flightCurrency(text: availableFlight.outbound.arrivalTime), departureTime: TextStyles.flightCurrency(text: availableFlight.inbound.departureTime),price: TextStyles.flightCurrency(text: String(format: "%.2f", availableFlight.price)))]
+        let element = [AvailableFlightDetail(airline: availableFlight.inbound.airline,
+                                             flightDescription: availableFlight.inbound.origin + "-" + availableFlight.inbound.destination,
+                                             departureDate: availableFlight.inbound.departureDate,
+                                             returnDate: availableFlight.outbound.arrivalDate,
+                                             returnTime: availableFlight.outbound.arrivalTime,
+                                             departureTime: availableFlight.inbound.departureTime,
+                                             price: String(format: "%.2f", availableFlight.price))]
         
         let section = AvailableFlightsSection(sectionElement: AvailableFlightsSectionViewModel(elements: element,
                                                                                                      delegate: nil,
