@@ -25,15 +25,15 @@ class AvailableFlightTableViewCell: UITableViewCell, Nibable, ConfigurableModule
      func configure(element: ModuledModelProtocol) {
         if let availableFlighsdetail = element as? AvailableFlightDetailRepresentable {
             
-            flightDescriptionLabel.configure(textConfigurable: availableFlighsdetail.flightDescription)
-            airlineLabel.configure(textConfigurable: availableFlighsdetail.airline)
+            flightDescriptionLabel.configure(textConfigurable: TextStyles.flightHeaderDescription(text: availableFlighsdetail.flightDescription))
+            airlineLabel.configure(textConfigurable: TextStyles.flightHeaderDescription(text: availableFlighsdetail.airline))
             departureLabel.configure(textConfigurable: TextStyles.flightHeaderDescription(text: "Departure"))
-            departureDateLabel.configure(textConfigurable: availableFlighsdetail.departureDate)
-            departureTimeLabel.configure(textConfigurable: availableFlighsdetail.departureTime)
+            departureDateLabel.configure(textConfigurable: TextStyles.flightHeaderPrice(text: availableFlighsdetail.departureDate))
+            departureTimeLabel.configure(textConfigurable: TextStyles.flightHeaderPrice(text: availableFlighsdetail.departureTime))
             arrivalLabel.configure(textConfigurable: TextStyles.flightHeaderDescription(text: "Arrival"))
-            arrivalDateLabel.configure(textConfigurable: availableFlighsdetail.returnDate)
-            arrivalTimeLabel.configure(textConfigurable: availableFlighsdetail.returnTime)
-            priceLabel.configure(textConfigurable: availableFlighsdetail.price)
+            arrivalDateLabel.configure(textConfigurable: TextStyles.flightHeaderPrice(text: availableFlighsdetail.returnDate))
+            arrivalTimeLabel.configure(textConfigurable: TextStyles.flightHeaderPrice(text: availableFlighsdetail.returnTime))
+            priceLabel.configure(textConfigurable: TextStyles.flightPrice(text: availableFlighsdetail.price))
         }
     }
 }
