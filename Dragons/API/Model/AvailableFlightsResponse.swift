@@ -21,33 +21,33 @@ struct AvailableFlightResponse: Codable {
     let price: Double
     let currency: String
     
-    func getAirline() -> TextConfigurableProtocol {
+    func getAirline() -> String {
         
-        return TextStyles.flightHeaderDescription(text: inbound.airline)
+        return inbound.airline
     }
     
-    func getFlightdescription() ->TextConfigurableProtocol {
-        return TextStyles.flightHeaderDescription(text: inbound.origin + inbound.destination)
+    func getFlightdescription() -> String {
+        return  inbound.origin + inbound.destination
     }
     
-    func getDepartureDate() ->TextConfigurableProtocol {
-        return TextStyles.flightHeaderPrice(text: inbound.departureDate)
+    func getDepartureDate() -> String {
+        return inbound.departureDate
     }
     
-    func getReturnDate() -> TextConfigurableProtocol {
-         return TextStyles.flightHeaderPrice(text: inbound.arrivalDate)
+    func getReturnDate() -> String {
+         return inbound.arrivalDate
     }
     
-    func getReturnTime() -> TextConfigurableProtocol {
-         return TextStyles.flightHeaderPrice(text: inbound.arrivalTime)
+    func getReturnTime() -> String {
+         return inbound.arrivalTime
     }
     
-    func getDepartureTime() -> TextConfigurableProtocol {
-        return TextStyles.flightHeaderPrice(text: inbound.departureTime)
+    func getDepartureTime() -> String {
+        return inbound.departureTime
     }
     
-    func getPrice(price: Double) -> TextConfigurableProtocol {
-        return TextStyles.flightPrice(text: "\(String(format: "%.2f", price)) €")
+    func getPrice(price: Double) -> String {
+        return "\(String(format: "%.2f", price)) €"
     }
     
     func getAvailableFlightDetail(price: Double) -> AvailableFlightDetailRepresentable {

@@ -13,13 +13,13 @@ protocol AvailableFlightsDetailPresentable {
 }
 
 protocol AvailableFlightDetailRepresentable: ModuledModelProtocol {
-    var airline: TextConfigurableProtocol {get}
-    var flightDescription: TextConfigurableProtocol {get}
-    var departureDate: TextConfigurableProtocol {get}
-    var returnDate: TextConfigurableProtocol {get}
-    var departureTime: TextConfigurableProtocol {get}
-    var returnTime: TextConfigurableProtocol {get}
-    var price: TextConfigurableProtocol {get}
+    var airline: String {get}
+    var flightDescription: String {get}
+    var departureDate: String {get}
+    var returnDate: String {get}
+    var departureTime: String {get}
+    var returnTime: String {get}
+    var price: String {get}
 }
 
 struct availableFlighstDetail: AvailableFlightsDetailPresentable {
@@ -28,11 +28,11 @@ struct availableFlighstDetail: AvailableFlightsDetailPresentable {
 
 struct AvailableFlightDetail: AvailableFlightDetailRepresentable  {
     var cellType: UITableViewCell.Type = AvailableFlightTableViewCell.self
-    var airline: TextConfigurableProtocol
-    var flightDescription: TextConfigurableProtocol
-    var departureDate: TextConfigurableProtocol
-    var returnDate: TextConfigurableProtocol
-    var returnTime: TextConfigurableProtocol
-    var departureTime: TextConfigurableProtocol
-    var price: TextConfigurableProtocol
+    var airline: String
+    var flightDescription: String
+    var departureDate: String
+    var returnDate: String
+    var returnTime: String
+    var departureTime: String
+    var price: String
 }
